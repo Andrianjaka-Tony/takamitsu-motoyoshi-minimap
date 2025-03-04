@@ -16,4 +16,12 @@ export const images: string[] = [
   "/images/15.png",
   "/images/16.png",
   "/images/17.png",
+  "/images/18.png",
+  "/images/19.png",
+  "/images/20.png",
+  "/images/21.png",
+  "/images/22.png",
+  "/images/23.png",
+  "/images/24.png",
+  "/images/25.png",
 ];
