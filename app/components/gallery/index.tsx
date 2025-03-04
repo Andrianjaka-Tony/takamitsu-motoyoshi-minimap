@@ -21,7 +21,7 @@ export function Gallery() {
       <GalleryCategory />
       <GalleryMainImage progress={progress} />
       <GalleryMiniMapHighlight />
-      <GalleryMiniMap progress={progress} />
+      <GalleryMiniMap container={galleryRef} progress={progress} />
     </div>
   );
 }

@@ -10,7 +10,10 @@ export function GalleryMainImage({ progress }: Props) {
   const [activeImage, setActiveImage] = useState<string>(images[0]);
 
   useMotionValueEvent(progress, "change", (value) => {
-    const index = Math.floor(value * images.length);
+    let index = Math.floor(value * images.length);
+    if (index == images.length) {
+      index--;
+    }
     setActiveImage(images[index]);
   });
 
