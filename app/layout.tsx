@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ReactLenis from "lenis/react";
 
 export const metadata: Metadata = {
   title: "Takamitsu Motoyoshi Minimap Remake",
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <ReactLenis root>{children}</ReactLenis>
+      </body>
     </html>
   );
 }
