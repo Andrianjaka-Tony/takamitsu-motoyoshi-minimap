@@ -6,6 +6,7 @@ import { GalleryCategory } from "./category";
 import { GalleryMiniMap } from "./mini-map";
 import { useScroll } from "motion/react";
 import { GalleryMainImage } from "./main-image";
+import { GalleryMiniMapHighlight } from "./highlight";
 
 export function Gallery() {
   const galleryRef = useRef(null);
@@ -19,6 +20,7 @@ export function Gallery() {
     <div ref={galleryRef} className="w-screen relative h-[400vh]">
       <GalleryCategory />
       <GalleryMainImage progress={progress} />
+      <GalleryMiniMapHighlight />
       <GalleryMiniMap progress={progress} />
     </div>
   );
